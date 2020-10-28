@@ -1,6 +1,6 @@
 <template>
   <div class="aside">
-    <el-menu :default-active="currentIndex" :collapse-transition="false" 
+    <el-menu :default-active="currentIndex" :collapse-transition="false"
              class="el-menu-vertical-demo" :router="true">
       <template v-for="val in navList">
         <el-submenu v-if="val.children" :index="val.path" :key="val.path">
@@ -19,52 +19,29 @@
   </div>
 </template>
 <script>
+  import {navList} from './menu.js'
   export default {
     name: '',
     components: {},
     data() {
       return {
         currentIndex: '',
-        navList: [
-          {
-            name: '首页',
-            path: '/index'
-          },
-          {
-            name: '404',
-            path: '/a'
-          },
-          {
-            name: '401',
-            path: '/b'
-          },
-          {
-            name: '错误',
-            path: '/error',
-            children: [
-              {
-                name: '404',
-                path: '/404'
-              },
-              {
-                name: '401',
-                path: '/401'
-              }
-            ]
-          }
-        ]
+        navList: navList
       }
     },
     created(){
       this.currentIndex = this.$route.path;
     },
     methods: {
-      
+
     }
   }
 </script>
 <style lang="scss" type="text/scss" scoped>
   .aside{
+    position: fixed;
+    left: 0;
+    width: 250px;
     min-height: 100%;
     background: #fff;
   }

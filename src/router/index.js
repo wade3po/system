@@ -20,19 +20,33 @@ const routes = [
         },
       },
       {
-        path: '/a',
-        component: () => import(/* webpackChunkName: "a" */ '../views/common/404.vue'),
+        path: '/table',
+        component: () => import(/* webpackChunkName: "index" */ '../views/element/Table.vue'),
         meta: {
-          title: "a",
+          title: "表格",
         },
       },
       {
-        path: '/b',
-        component: () => import(/* webpackChunkName: "b" */ '../views/common/401.vue'),
+        path: '/upload',
+        component: () => import(/* webpackChunkName: "upload" */ '../views/element/Upload.vue'),
         meta: {
-          title: "b",
+          title: "上传",
         },
-      }
+      },
+      {
+        path: '/form',
+        component: () => import(/* webpackChunkName: "form" */ '../views/element/Form.vue'),
+        meta: {
+          title: "表单",
+        },
+      },
+      {
+        path: '/echarts',
+        component: () => import(/* webpackChunkName: "echarts" */ '../views/element/Echarts.vue'),
+        meta: {
+          title: "echarts表格",
+        },
+      },
     ]
   },
   {
@@ -42,13 +56,6 @@ const routes = [
       title: "404",
     },
   },
-  {
-    path: '/401',
-    component: () => import(/* webpackChunkName: "401" */ '../views/common/401.vue'),
-    meta: {
-      title: "401",
-    },
-  }
 ]
 
 const router = new VueRouter({

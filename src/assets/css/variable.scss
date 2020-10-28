@@ -1,5 +1,7 @@
 $theme-color: #e85164;
 $font-color: #333;
+$border-color: #e2e3e5;
+$back-color: #f0f2f5;
 
 //多行文字截断
 @mixin line-clamp($lines) {

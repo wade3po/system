@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import "@/components/global/global.js"
 import "@/plugins/element/element.js"
 import "@/assets/css/reset.scss"
 

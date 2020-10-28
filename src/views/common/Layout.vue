@@ -1,17 +1,25 @@
 <template>
   <div class="layout">
     <el-container>
-      <el-header>
+      <el-header class="header-wrap">
         <Head></Head>
       </el-header>
       <el-container>
-        <el-aside width="200px">
+        <el-aside width="250px">
           <Aside></Aside>
         </el-aside>
-        <el-main>
-          <transition name="fade-transform" mode="out-in">
-            <router-view/>
-          </transition>
+        <el-main class="main-wrap">
+<!--          <div class="page-title-wrap">-->
+<!--            <PageTitle></PageTitle>-->
+<!--          </div>-->
+          <div class="router-wrap" :style="{maxHeight: height}">
+            <transition name="fade-transform" mode="out-in">
+              <router-view/>
+            </transition>
+          </div>
+          <el-footer class="foot-wrap">
+            Copyright ©️ 2020-2020，code 版权所有. 还未备案
+          </el-footer>
         </el-main>
       </el-container>
     </el-container>
@@ -20,13 +28,19 @@
 <script>
   import Head from '@/components/head/Head'
   import Aside from '@/components/aside/Aside'
+  import PageTitle from '@/components/pageTitle/PageTitle'
   export default {
     name: '',
-    components: {Head, Aside},
+    components: {Head, Aside, PageTitle},
     data() {
       return {
         transitionName: 'left-enter'
       }
+    },
+    computed: {
+      height() {
+        return window.innerHeight - 150 + 'px'
+      },
     },
     watch: {
       '$route' (to, from) {
@@ -38,6 +52,30 @@
   }
 </script>
 <style lang="scss" type="text/scss" scoped>
+  .main-wrap{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding: 0;
+    background: #fff;
+  }
+  .header-wrap{
+    height: 80px !important;
+  }
+  .foot-wrap{
+    height: 50px !important;
+    line-height: 50px;
+    text-align: center;
+    background: $back-color;
+  }
+  .router-wrap{
+    flex: 1;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+  }
+  .page-title-wrap{
+    height: 40px;
+  }
   .layout {
     display: flex;
     width: 100%;
