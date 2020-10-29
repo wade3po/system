@@ -23,6 +23,10 @@ export const navList = [
         name: 'echarts表格',
         path: '/echarts'
       },
+      {
+        name: '富文本编辑器',
+        path: '/wangeditor'
+      },
     ]
   },
   {

@@ -39,7 +39,7 @@
     },
     computed: {
       height() {
-        return window.innerHeight - 150 + 'px'
+        return window.innerHeight - 120 + 'px'
       },
     },
     watch: {
@@ -63,15 +63,14 @@
     height: 80px !important;
   }
   .foot-wrap{
-    height: 50px !important;
-    line-height: 50px;
+    height: 40px !important;
+    line-height: 40px;
     text-align: center;
     background: $back-color;
   }
   .router-wrap{
     flex: 1;
     overflow-y: scroll;
-    padding-bottom: 20px;
   }
   .page-title-wrap{
     height: 40px;

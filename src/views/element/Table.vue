@@ -90,9 +90,8 @@
           </template>
         </el-table-column>
       </el-table>
-      <Pagination :total="total" :page="page" @handle-currentChange="getTable" @handle-sizeChange="getTable"></Pagination>
     </div>
-
+    <Pagination :total="total" :page="page" @handle-currentChange="getTable" @handle-sizeChange="getTable"></Pagination>
     <el-dialog :title="addEditType ? '新增' : '编辑'" class="w-dialg" :visible.sync="addEditShow" width="500px">
       <div class="container">
         <el-form ref="addEditForm" :model="addEditForm" label-position="right" label-width="100px"
@@ -153,7 +152,7 @@
     },
     computed: {
       height() {
-        return window.innerHeight - 307
+        return window.innerHeight - 300
       },
     },
     mounted() {

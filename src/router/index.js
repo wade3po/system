@@ -47,6 +47,13 @@ const routes = [
           title: "echarts表格",
         },
       },
+      {
+        path: '/wangeditor',
+        component: () => import(/* webpackChunkName: "wangeditor" */ '../views/element/WangEditor.vue'),
+        meta: {
+          title: "富文本编辑器",
+        },
+      },
     ]
   },
   {

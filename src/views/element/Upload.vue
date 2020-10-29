@@ -1,5 +1,5 @@
 <template>
-  <div class="upload-wrap">
+  <div class="upload-wrap w-pb20">
     <el-upload
       class="upload-content"
       drag
