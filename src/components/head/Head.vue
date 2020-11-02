@@ -34,5 +34,6 @@
   }
   .logo{
     height: 50px;
+    margin-left: 15px;
   }
 </style>
