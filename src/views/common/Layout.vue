@@ -18,7 +18,7 @@
             </transition>
           </div>
           <el-footer class="foot-wrap">
-            Copyright ©️ 2020-2020，code 版权所有. 还未备案
+            Copyright ©️ 2020-2020，code 版权所有. <a href="http://beian.miit.gov.cn">闽ICP备2020020205号</a>
           </el-footer>
         </el-main>
       </el-container>
