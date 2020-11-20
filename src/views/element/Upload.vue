@@ -10,8 +10,8 @@
       :on-change="handleChange"
       multiple>
       <i class="el-icon-upload"></i>
-      <div class="el-upload__text">将文件拖到此处，或<em>点击上传</em></div>
-      <div class="el-upload__tip">只能上传jpg/png文件，且不超过10M</div>
+      <div class="el-upload__text">将图片拖到此处，或<em>点击上传</em></div>
+      <div class="el-upload__tip">只能上传jpg/png/jpeg文件，且不超过10M</div>
     </el-upload>
     <div class="operate-wrap">
       <el-button type="primary" @click="clearFileList">清空列表</el-button>
@@ -46,9 +46,6 @@
       }
     },
     methods: {
-      handleClick() {
-        this.$refs.input.click();
-      },
       handleChange(file) {
         let limitSize = 1024 * 1024 * 10;
         if (file.size > limitSize) {
@@ -117,11 +114,9 @@
     height: 300px;
     margin: 50px auto;
   }
-
   .upload-list {
     display: flex;
     flex-wrap: wrap;
-
     li {
       display: flex;
       align-items: center;
@@ -131,7 +126,6 @@
       margin: 20px 0 0 20px;
       border: solid 1px $border-color;
     }
-
     .img-wrap {
       display: flex;
       align-items: center;
@@ -140,14 +134,7 @@
       height: 120px;
       margin-top: 20px;
       border: solid 1px $border-color;
-
-      .upload-img {
-        width: auto;
-        max-height: 120px;
-        max-width: 120px;
-      }
     }
-
     .img-name {
       width: 160px;
       margin: 20px;
@@ -155,7 +142,6 @@
       text-align: center;
     }
   }
-
   .operate-wrap {
     text-align: center;
   }

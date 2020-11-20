@@ -7,7 +7,7 @@
           <template slot="title">
             <span slot="title">{{val.name}}</span>
           </template>
-          <el-menu-item-group v-for="item in val.children">
+          <el-menu-item-group v-for="item in val.children" :key="item.path">
             <el-menu-item :index="item.path">{{item.name}}</el-menu-item>
           </el-menu-item-group>
         </el-submenu>

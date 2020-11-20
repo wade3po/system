@@ -49,11 +49,18 @@ const routes = [
       },
       {
         path: '/wangeditor',
-        component: () => import(/* webpackChunkName: "wangeditor" */ '../views/element/WangEditor.vue'),
+        component: () => import(/* webpackChunkName: "wangeditor" */ '../views/plugin/WangEditor.vue'),
         meta: {
           title: "富文本编辑器",
         },
       },
+      {
+        path: '/compressimg',
+        component: () => import(/* webpackChunkName: "compressimg" */ '../views/plugin/CompressImg.vue'),
+        meta: {
+          title: "压缩图片",
+        },
+      }
     ]
   },
   {

@@ -9,7 +9,6 @@ $back-color: #f0f2f5;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: $lines; //显示的行数
-  /*! autoprefixer: off */
+  /* autoprefixer: ignore next */
   -webkit-box-orient: vertical;
-  /* autoprefixer: on */
 }

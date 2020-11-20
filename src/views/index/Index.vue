@@ -3,7 +3,6 @@
   </div>
 </template>
 <script>
-  import BenzAMRRecorder from 'benz-amr-recorder'
   export default {
     
   }

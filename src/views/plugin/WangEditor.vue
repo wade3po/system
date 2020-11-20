@@ -7,7 +7,7 @@
       <el-button type="primary" @click="preview">预览效果</el-button>
     </div>
 
-    <el-dialog title="预览" class="w-dialg" :visible.sync="previewShow" width="80%">
+    <el-dialog title="预览" class="w-dialg" :visible.sync="previewShow" width="50%">
       <div class="container">
         <div v-html="previewHtml"></div>
       </div>
@@ -15,7 +15,7 @@
   </div>
 </template>
 <script>
-  import E from 'wangeditor'
+  import E from 'WangEditor'
   export default {
     name: '',
     components: {},

@@ -84,3 +84,17 @@
 .w-pb20{
   padding-bottom: 20px;
 }
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upload-img .el-image__inner{
+  width: auto;
+  height: auto;
+  max-width: 120px;
+  max-height: 120px;
+}
+.compress-upload .el-upload-dragger .el-icon-upload{
+  margin-top: 35px;
+}

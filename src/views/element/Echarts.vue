@@ -1,6 +1,6 @@
 <template>
   <div class="echarts-wrap w-pb20">
-      <div class="item" v-for="(val, index) in 8" :id="'echarts' + index"></div>
+      <div class="item" v-for="(val, index) in 8" :key="'echarts' + index" :id="'echarts' + index"></div>
   </div>
 </template>
 <script>

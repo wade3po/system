@@ -22,20 +22,30 @@ export const navList = [
       {
         name: 'echarts表格',
         path: '/echarts'
-      },
-      {
-        name: '富文本编辑器',
-        path: '/wangeditor'
-      },
+      }
     ]
   },
   {
     name: '错误',
-    path: '/error',
+    path: '/404',
     children: [
       {
         name: '404',
         path: '/404'
+      },
+    ]
+  },
+  {
+    name: '插件',
+    path: '/plugin',
+    children: [
+      {
+        name: '富文本编辑器',
+        path: '/wangeditor'
+      },
+      {
+        name: '压缩图片',
+        path: '/compressimg'
       },
     ]
   },
