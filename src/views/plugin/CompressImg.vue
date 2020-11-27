@@ -127,8 +127,8 @@
             resolve(blob);
             // canvas.toBlob(blob => {
             //   resolve(blob);
-            //   canvas.remove();
             // }, 'image/jpeg', this.compressPersents);
+            canvas.remove();
           }
         })
       },

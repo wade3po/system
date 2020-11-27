@@ -1,8 +1,16 @@
 <template>
   <div class="head">
     <img src="../../assets/images/logo.png" class="logo" alt="">
-    <div>
-      用户
+    <div class="user">
+      <el-dropdown @command="goTo">
+        <span class="el-dropdown-link">
+          WADE<i class="el-icon-arrow-down el-icon--right"></i>
+        </span>
+        <el-dropdown-menu slot="dropdown">
+          <el-dropdown-item command="0">gitHub</el-dropdown-item>
+          <el-dropdown-item command="1">知乎</el-dropdown-item>
+        </el-dropdown-menu>
+      </el-dropdown>
     </div>
   </div>
 </template>
@@ -11,10 +19,17 @@
     name: '',
     components: {},
     data() {
-      return {}
+      return {
+        urls: [
+          'https://github.com/wade3po/system',
+          'https://www.zhihu.com/people/wade-8-95/posts'
+        ]
+      }
     },
-    created() {
-
+    methods:{
+      goTo(index){
+        window.open(this.urls[index]);
+      }
     }
   }
 </script>
@@ -29,11 +44,15 @@
     align-items: center;
     height: 60px;
     width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
     background: #fff;
     box-shadow: 0px 0px 10px 0px rgba(31, 93, 145, 0.3);
   }
   .logo{
     height: 50px;
-    margin-left: 15px;
+  }
+  .user{
+    cursor: pointer;
   }
 </style>
