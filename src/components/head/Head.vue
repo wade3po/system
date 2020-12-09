@@ -7,7 +7,7 @@
           WADE<i class="el-icon-arrow-down el-icon--right"></i>
         </span>
         <el-dropdown-menu slot="dropdown">
-          <el-dropdown-item command="0">gitHub</el-dropdown-item>
+          <el-dropdown-item command="0">GitHub</el-dropdown-item>
           <el-dropdown-item command="1">知乎</el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>

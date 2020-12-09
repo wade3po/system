@@ -47,6 +47,10 @@ export const navList = [
         name: '压缩图片',
         path: '/compressimg'
       },
+      {
+        name: '图片编辑器',
+        path: '/imageeditor'
+      },
     ]
   },
 ]

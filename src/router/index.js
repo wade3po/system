@@ -60,7 +60,14 @@ const routes = [
         meta: {
           title: "压缩图片",
         },
-      }
+      },
+      {
+        path: '/imageeditor',
+        component: () => import(/* webpackChunkName: "imageeditor" */ '../views/plugin/ImageEditor.vue'),
+        meta: {
+          title: "图片编辑器",
+        },
+      },
     ]
   },
   {
@@ -69,6 +76,10 @@ const routes = [
     meta: {
       title: "404",
     },
+  },
+  {
+    path: '*',
+    redirect: '/404'
   },
 ]
 
