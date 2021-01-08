@@ -53,4 +53,14 @@ export const navList = [
       },
     ]
   },
+  {
+    name: '指令',
+    path: '/directive',
+    children: [
+      {
+        name: '常用小指令',
+        path: '/smalldirective'
+      }
+    ]
+  },
 ]

@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 
 import "@/components/global/global.js"
+import "@/utils/directives.js"
 import "@/plugins/element/element.js"
 import "@/assets/css/reset.scss"
 

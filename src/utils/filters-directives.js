@@ -5,15 +5,6 @@ Vue.filter('orgType',function(val){
   return typeList[val - 1];
 });
 
-//指令实例
-Vue.directive('permission', {
-  componentUpdated: (el, binding, vnode) => {
-    if(!binding.value){
-      el.remove()
-    }
-  }
-})
-
 Vue.mixin({
   methods: {
     creatPermit(arr){

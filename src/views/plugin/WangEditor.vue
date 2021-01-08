@@ -15,7 +15,7 @@
   </div>
 </template>
 <script>
-  import E from 'WangEditor'
+  import E from 'wangeditor'
   export default {
     name: '',
     components: {},

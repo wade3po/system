@@ -67,6 +67,12 @@ const routes = [
         meta: {
           title: "图片编辑器",
         },
+      },{
+        path: '/smalldirective',
+        component: () => import(/* webpackChunkName: "smalldirective" */ '../views/directive/SmallDirective.vue'),
+        meta: {
+          title: "常用小指令",
+        },
       },
     ]
   },
