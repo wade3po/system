@@ -364,11 +364,12 @@ body {
   background: $back-color;
 }
 
-div, p, a,img,ul,li,form,label,table,tr,td,footer,header,nav,section,input{
+div, p, a,img,ul,li,form,label,table,tr,td,footer,header,nav,section,input,textarea{
   padding: 0;
   margin: 0;
   border: 0;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 a {

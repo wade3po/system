@@ -10,7 +10,7 @@ Vue.directive('permission', {
   }
 })
 
-//指令实例
+//复制指令
 Vue.directive('copy', {
   bind(el, { value }) {
     el.$value = value
@@ -47,7 +47,7 @@ Vue.directive('copy', {
     el.removeEventListener('click', el.handler)
   }
 })
-
+//防抖指令
 Vue.directive('debounce', {
   inserted: function (el, binding) {
     let timer
@@ -61,3 +61,26 @@ Vue.directive('debounce', {
     })
   }
 })
+//拖拽指令
+Vue.directive('draggable', {
+  inserted: function (el) {
+    el.style.position = 'absolute';
+    el.style.cursor = 'move';
+    el.onmousedown = function(event){
+      let startX = event.clientX;
+      let startY = event.clientY;
+      let left = el.offsetLeft;
+      let top = el.offsetTop;
+      document.onmousemove = function(event){
+        let X = event.clientX - startX
+        let Y = event.clientY - startY;
+        el.style.left = `${X + left}px`;
+        el.style.top = `${Y + top}px`;
+      }
+      document.onmouseup = function(){
+        document.onmousemove = document.onmouseup = null;
+      };
+    }
+  }
+})
+

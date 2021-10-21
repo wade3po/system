@@ -51,6 +51,10 @@ export const navList = [
         name: '图片编辑器',
         path: '/imageeditor'
       },
+      {
+        name: '可视化拖拽',
+        path: '/dragEdit'
+      },
     ]
   },
   {

@@ -9,9 +9,6 @@
           <Aside></Aside>
         </el-aside>
         <el-main class="main-wrap">
-<!--          <div class="page-title-wrap">-->
-<!--            <PageTitle></PageTitle>-->
-<!--          </div>-->
           <div class="router-wrap" :style="{maxHeight: height}">
             <transition name="fade-transform" mode="out-in">
               <router-view/>
@@ -70,7 +67,6 @@
   }
   .router-wrap{
     flex: 1;
-    overflow-y: scroll;
   }
   .page-title-wrap{
     height: 40px;

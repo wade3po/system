@@ -73,6 +73,12 @@ const routes = [
         meta: {
           title: "常用小指令",
         },
+      },{
+        path: '/dragEdit',
+        component: () => import(/* webpackChunkName: "dragEdit" */ '../views/plugin/DragEdit.vue'),
+        meta: {
+          title: "可视化拖拽",
+        },
       },
     ]
   },
