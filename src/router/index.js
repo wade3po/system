@@ -79,6 +79,12 @@ const routes = [
         meta: {
           title: "可视化拖拽",
         },
+      },{
+        path: '/qrcode',
+        component: () => import(/* webpackChunkName: "qrcode" */ '../views/plugin/qrcode.vue'),
+        meta: {
+          title: "二维码生成",
+        },
       },
     ]
   },

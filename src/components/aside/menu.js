@@ -50,11 +50,14 @@ export const navList = [
       {
         name: '图片编辑器',
         path: '/imageeditor'
+      },{
+        name: '二维码生成',
+        path: '/qrcode'
       },
-      {
-        name: '可视化拖拽',
-        path: '/dragEdit'
-      },
+      // {
+      //   name: '可视化拖拽',
+      //   path: '/dragEdit'
+      // },
     ]
   },
   {
